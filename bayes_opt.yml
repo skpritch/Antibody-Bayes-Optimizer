@@ -1,0 +1,78 @@
+name: bayes_opt
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - jupyter
+  - jupyterlab
+  # deep-learning core (from conda-forge, ARM64)
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - torchaudio=2.5.1
+  # scientific stack
+  - numpy
+  - scipy
+  - pandas
+  - biopython
+  - pdb-tools
+  - tqdm
+  - dask
+  - pyarrow
+  # plotting
+  - matplotlib
+  - seaborn
+  # training-time extras
+  - scikit-learn
+  - scikit-optimize
+  - tensorboard
+  - pip
+  # enable widgets in Jupyter
+  - nodejs             # for building notebook extensions
+  - ipywidgets
+  - jupyterlab_widgets
+  # Absolut-specific packages
+  - clangxx
+  - make
+  - gsl
+  # Pip installations
+  - pip:
+    - wandb
+    # ESM dependencies
+    - transformers
+    - datasets
+    - huggingface-hub
+    - tokenizers
+    - esm
+    # Web interface
+    - fastapi
+    - uvicorn
+    - redis
+    - rq
+    - streamlit
+    - requests
+    - ipywidgets
+    - networkx
+    - sympy
+    - statsmodels
+    - pillow
+    - pydantic
+    - regex
+    - safetensors
+    - filelock
+    - psutil
+    - packaging
+    - requests
+    - urllib3
+    - aiohttp
+    - fsspec
+    # Clustering
+    - hdbscan
+    # BO Framework
+    - gpytorch 
+    - botorch 
+    - ax-platform
+    # For BioPhi Call
+    - python-dotenv
+    
